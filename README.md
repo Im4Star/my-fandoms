@@ -31,7 +31,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1b2a,50:1b3a57,100:5dade2&height=2" width="100%" alt="" />
 
-## 🎬 ── ANIME
+## 🎬 ── MOVIE/ANIME
 
 <p align="center">
   <img src="pfp/gachiakuta.jpg" width="150" alt="Gachiakuta" />
