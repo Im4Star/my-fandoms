@@ -16,8 +16,8 @@
 
 <p align="center">
   <img src="pfp/gacha-life.jpg" width="150" alt="Gacha Life" />
-  <img src="pfp/ddlc.jpg" width="150" alt="Doki Doki Literature Club" />
-  <img src="pfp/fnaf.jpg" width="150" alt="Five Nights at Freddy's" />
+  <img src="./ddlc.jpg" width="150" alt="Doki Doki Literature Club" />
+  <img src="./fnaf.jpg" width="150" alt="Five Nights at Freddy's" />
   <img src="pfp/sally-face.jpg" width="150" alt="Sally Face" />
   <img src="pfp/mouthwashing.jpg" width="150" alt="Mouthwashing" />
   <img src="pfp/homicipher.jpg" width="150" alt="Homicipher" />
