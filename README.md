@@ -1,6 +1,6 @@
 <div align="center">
 
-# ୨ৎ MY FANDOM ARCHIVE
+# MY FANDOM ARCHIVE
 
 *a little corner of the internet dedicated to the things I love.*
 
@@ -31,13 +31,15 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1b2a,50:1b3a57,100:5dade2&height=2" width="100%" alt="" />
 
-## 🎬 ── MOVIE/ANIME
+## 🎬 ── ANIME
 
 <p align="center">
-  <img src="pfp/gachiakuta.jpg" width="150" alt="Gachiakuta" />
-  <img src="pfp/naruto.jpg" width="150" alt="Naruto" />
-  <img src="pfp/demon-slayer.jpg" width="150" alt="Demon Slayer" />
-  <img src="pfp/ddlc.jpg" width="150" alt="Angel of Death" />
+  <img src="./gachitaku.jpg" width="150" alt="Gachiakuta" />
+  <img src="./demon slayer.jpg" width="150" alt="Demon Slayer" />
+  <img src="./the promise never land.jpg" width="150" alt="The Promise Never Land" />
+  <img src="./Angels Of Death.jpg" width="150" alt="Angel of Death" />
+  <img src="./Wandering witch.jpg" width="150" alt="Wandering Witch" />
+  <img src="./Assassination Classroom.jpg" width="150" alt="Assassination Classroom" />
 </p>
 
 <div align="center">
@@ -58,14 +60,14 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1b2a,50:1b3a57,100:5dade2&height=2" width="100%" alt="" />
 
-## 📚 ── MANGA / WEBTOON
+## 📚 ── MOVIES
 
 <p align="center">
   <!-- Add your manga and webtoon images here -->
 </p>
 
 <div align="center">
-  <i>more stories to get lost in.</i>
+  <i>more movies to get lost in.</i>
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1b2a,50:1b3a57,100:5dade2&height=2" width="100%" alt="" />
