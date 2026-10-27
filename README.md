@@ -67,7 +67,12 @@
 ## 🎬 ── MOVIES
 
 <p align="center">
-  <!-- Add your manga and webtoon images here -->
+   <img src="./end game.jpg" width="150" alt="Avenger Endgame" />
+   <img src="./no way home.jpg" width="150" alt="Spider Man no way home" />
+   <img src="./charlie and the chocolate factory.jpg" width="150" alt="Charlie and the chocolate factory" />
+   <img src="./Harry Potter.jpg" width="150" alt="Harry Potter" />
+   <img src="./joker.jpg" width="150" alt="Joker" />
+   <img src="./Ready or Not.jpg" width="150" alt="Ready or Not" />
 </p>
 
 <div align="center">
