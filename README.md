@@ -4,7 +4,7 @@
 
 *a little corner of the internet dedicated to the things I love.*
 
-✦ games · anime · cartoons · manga & webtoon ✦
+✦ games · anime · cartoons · movies ✦
 
 <br>
 
