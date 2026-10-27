@@ -15,7 +15,7 @@
             position: relative;
         }
 
-        /* --- Hiệu ứng nền ngôi sao --- */
+        /* --- Hiệu ứng nền ngôi sao nhẹ nhàng --- */
         .star-container {
             position: fixed;
             top: 0;
@@ -37,13 +37,12 @@
 
         @keyframes twinkle {
             0%, 100% {
-                opacity: 0;
-                transform: scale(0.3);
+                opacity: 0.1;
+                transform: scale(0.5);
             }
             50% {
-                opacity: 0.9;
-                transform: scale(1.2);
-                box-shadow: 0 0 8px #5dade2, 0 0 12px #ffffff;
+                opacity: 0.7;
+                transform: scale(1);
             }
         }
 
@@ -59,10 +58,10 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Hiệu ứng hover nổi bật cho ảnh */
+        /* Hiệu ứng hover nhẹ nhàng cho ảnh */
         img:hover {
             transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 0 15px rgba(93, 173, 226, 0.6);
+            box-shadow: 0 0 12px rgba(93, 173, 226, 0.4);
         }
 
         .grid {
@@ -87,7 +86,7 @@
 </head>
 <body>
 
-    <!-- Container chứa ngôi sao lấp lánh -->
+    <!-- Container chứa ngôi sao lấp lánh nhẹ nhàng -->
     <div class="star-container" id="stars"></div>
 
     <div class="center">
@@ -157,27 +156,27 @@
         <p><em>more fandoms will be added as I remember them.</em></p>
     </div>
 
-    <!-- Script tạo hiệu ứng ngôi sao ngẫu nhiên -->
+    <!-- Script tạo hiệu ứng ngôi sao trắng nhẹ nhàng -->
     <script>
         function createStars() {
             const container = document.getElementById('stars');
-            const starCount = 80; // Số lượng ngôi sao
+            const starCount = 30; // Giảm số lượng xuống 30 ngôi sao cho nhẹ nhàng
 
             for (let i = 0; i < starCount; i++) {
                 const star = document.createElement('div');
                 star.classList.add('star');
                 
-                // Kích thước ngẫu nhiên từ 1px - 3px
-                const size = Math.random() * 2 + 1;
+                // Kích thước nhỏ nhắn từ 1px - 2px
+                const size = Math.random() * 1.5 + 1;
                 star.style.width = `${size}px`;
                 star.style.height = `${size}px`;
                 
-                // Vị trí ngẫu nhiên trên màn hình
+                // Vị trí ngẫu nhiên
                 star.style.top = `${Math.random() * 100}%`;
                 star.style.left = `${Math.random() * 100}%`;
                 
-                // Thời gian nhấp nháy và độ trễ ngẫu nhiên
-                const duration = Math.random() * 3 + 2; // 2s - 5s
+                // Thời gian nhấp nháy êm dịu (3s - 6s)
+                const duration = Math.random() * 3 + 3; 
                 const delay = Math.random() * 5;
                 star.style.setProperty('--duration', `${duration}s`);
                 star.style.animationDelay = `${delay}s`;
