@@ -51,7 +51,11 @@
 ## 📺 ── CARTOONS
 
 <p align="center">
-  <!-- Add your cartoon images here -->
+  <img src="./Courage the Cowardly Dog.jpg" width="150" alt="Courage the Cowardly Dog" />
+  <img src="./Steven Universe.jpg" width="150" alt="Steven Universe" />
+  <img src="./Star vs forces of evil.jpg" width="150" alt="Star vs forces of evil" />
+  <img src="./Gravity Falls.jpg" width="150" alt="Gravity Falls" />
+  <img src="./Adventure time.jpg" width="150" alt="Adventure time" />
 </p>
 
 <div align="center">
