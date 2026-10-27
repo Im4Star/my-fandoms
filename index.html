@@ -5,62 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY FANDOM ARCHIVE</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
             background-color: #0d1b2a;
             color: #ffffff;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            overflow-x: hidden;
-            position: relative;
-            min-height: 100vh;
         }
-
-        /* --- Nền sao lấp lánh --- */
-        #star-field {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .star-item {
-            position: absolute;
-            color: #87ceeb;
-            font-size: 12px;
-            animation: twinkleAnimation var(--speed) infinite ease-in-out;
-            user-select: none;
-        }
-
-        @keyframes twinkleAnimation {
-            0%, 100% {
-                opacity: 0.1;
-                transform: scale(0.6) rotate(0deg);
-            }
-            50% {
-                opacity: 1;
-                transform: scale(1.4) rotate(45deg);
-                text-shadow: 0 0 8px #5dade2, 0 0 15px #ffffff;
-            }
-        }
-
-        /* --- Bố cục nội dung --- */
-        .content-container {
-            position: relative;
-            z-index: 1;
-        }
-
         .center {
             text-align: center;
         }
-
+        img {
+            border-radius: 8px;
+            margin: 5px;
+            object-fit: cover;
+        }
         .grid {
             display: flex;
             flex-wrap: wrap;
@@ -68,26 +27,12 @@
             gap: 15px;
             margin: 20px 0;
         }
-
-        img {
-            border-radius: 8px;
-            margin: 5px;
-            object-fit: cover;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        img:hover {
-            transform: translateY(-6px) scale(1.05);
-            box-shadow: 0 0 15px #5dade2;
-        }
-
         hr {
             border: none;
             height: 2px;
             background: linear-gradient(to right, #0d1b2a, #5dade2, #0d1b2a);
             margin: 30px 0;
         }
-
         i {
             color: #b0c4de;
         }
@@ -95,104 +40,72 @@
 </head>
 <body>
 
-    <!-- Container chứa hiệu ứng sao -->
-    <div id="star-field"></div>
-
-    <div class="content-container">
-        <div class="center">
-            <h1>MY FANDOM ARCHIVE</h1>
-            <p><em>a little corner of the internet dedicated to the things I love.</em></p>
-            <p>✦ games · anime · cartoons · movies ✦</p>
-        </div>
-
-        <hr>
-
-        <!-- GAMES -->
-        <h2 class="center">🎮 ── GAMES</h2>
-        <div class="grid">
-            <img src="./ddlc.jpg" width="150" alt="Doki Doki Literature Club" />
-            <img src="./undertale.jpg" width="150" alt="Undertale" />
-            <img src="./lilnightmare.jpg" width="150" alt="Little Nightmare" />
-            <img src="./Sallyface.jpg" width="150" alt="Sally Face" />
-            <img src="./fnaf.jpg" width="150" alt="Five Nights at Freddy's" />
-            <img src="./mouthwasing.jpg" width="150" alt="Mouthwashing" />
-        </div>
-        <div class="center"><i>I definitely like horror games that have a storyline.</i></div>
-
-        <hr>
-
-        <!-- ANIME -->
-        <h2 class="center">📚 ── ANIME</h2>
-        <div class="grid">
-            <img src="./gachitaku.jpg" width="150" alt="Gachiakuta" />
-            <img src="./demon slayer.jpg" width="150" alt="Demon Slayer" />
-            <img src="./the promise never land.jpg" width="150" alt="The Promise Never Land" />
-            <img src="./Angels Of Death.jpg" width="150" alt="Angel of Death" />
-            <img src="./Wandering witch.jpg" width="150" alt="Wandering Witch" />
-            <img src="./Assassination Classroom.jpg" width="150" alt="Assassination Classroom" />
-        </div>
-        <div class="center"><i>good one.</i></div>
-
-        <hr>
-
-        <!-- CARTOONS -->
-        <h2 class="center">📺 ── CARTOONS</h2>
-        <div class="grid">
-            <img src="./Courage the Cowardly Dog.jpg" width="150" alt="Courage the Cowardly Dog" />
-            <img src="./Steven Universe.jpg" width="150" alt="Steven Universe" />
-            <img src="./Star vs forces of evil.jpg" width="150" alt="Star vs forces of evil" />
-            <img src="./Gravity Falls.jpg" width="150" alt="Gravity Falls" />
-            <img src="./Adventure time.jpg" width="150" alt="Adventure time" />
-        </div>
-        <div class="center"><i>cartoon network and a whole lot more.</i></div>
-
-        <hr>
-
-        <!-- MOVIES -->
-        <h2 class="center">🎬 ── MOVIES</h2>
-        <div class="grid">
-            <img src="./end game.jpg" width="150" alt="Avenger Endgame" />
-            <img src="./no way home.jpg" width="150" alt="Spider Man no way home" />
-            <img src="./charlie and the chocolate factory.jpg" width="150" alt="Charlie and the chocolate factory" />
-            <img src="./Harry Potter.jpg" width="150" alt="Harry Potter" />
-            <img src="./joker.jpg" width="150" alt="Joker" />
-            <img src="./Ready or Not.jpg" width="150" alt="Ready or Not" />
-        </div>
-        <div class="center"><i>more movies to get lost in.</i></div>
-
-        <hr>
-
-        <div class="center">
-            <p><em>more fandoms will be added as I remember them.</em></p>
-        </div>
+    <div class="center">
+        <h1>MY FANDOM ARCHIVE</h1>
+        <p><em>a little corner of the internet dedicated to the things I love.</em></p>
+        <p>✦ games · anime · cartoons · movies ✦</p>
     </div>
 
-    <!-- Script tạo hiệu ứng sao lấp lánh -->
-    <script>
-        (function generateStars() {
-            const field = document.getElementById('star-field');
-            if (!field) return;
+    <hr>
 
-            const shapes = ['✦', '✧', '★', '✨', '•'];
-            const count = 60;
+    <!-- GAMES -->
+    <h2 class="center">🎮 ── GAMES</h2>
+    <div class="grid">
+        <img src="./ddlc.jpg" width="150" alt="Doki Doki Literature Club" />
+        <img src="./undertale.jpg" width="150" alt="Undertale" />
+        <img src="./lilnightmare.jpg" width="150" alt="Little Nightmare" />
+        <img src="./Sallyface.jpg" width="150" alt="Sally Face" />
+        <img src="./fnaf.jpg" width="150" alt="Five Nights at Freddy's" />
+        <img src="./mouthwasing.jpg" width="150" alt="Mouthwashing" />
+    </div>
+    <div class="center"><i>I definitely like horror games that have a storyline</i></div>
 
-            for (let i = 0; i < count; i++) {
-                const star = document.createElement('span');
-                star.className = 'star-item';
-                star.textContent = shapes[Math.floor(Math.random() * shapes.length)];
-                
-                star.style.top = Math.random() * 100 + 'vh';
-                star.style.left = Math.random() * 100 + 'vw';
-                star.style.fontSize = (Math.random() * 12 + 8) + 'px';
-                
-                const speed = (Math.random() * 2 + 1.5) + 's';
-                const delay = (Math.random() * 3) + 's';
-                star.style.setProperty('--speed', speed);
-                star.style.animationDelay = delay;
+    <hr>
 
-                field.appendChild(star);
-            }
-        })();
-    </script>
+    <!-- ANIME -->
+    <h2 class="center">📚 ── ANIME</h2>
+    <div class="grid">
+        <img src="./gachitaku.jpg" width="150" alt="Gachiakuta" />
+        <img src="./demon slayer.jpg" width="150" alt="Demon Slayer" />
+        <img src="./the promise never land.jpg" width="150" alt="The Promise Never Land" />
+        <img src="./Angels Of Death.jpg" width="150" alt="Angel of Death" />
+        <img src="./Wandering witch.jpg" width="150" alt="Wandering Witch" />
+        <img src="./Assassination Classroom.jpg" width="150" alt="Assassination Classroom" />
+    </div>
+    <div class="center"><i>good one</i></div>
+
+    <hr>
+
+    <!-- CARTOONS -->
+    <h2 class="center">📺 ── CARTOONS</h2>
+    <div class="grid">
+        <img src="./Courage the Cowardly Dog.jpg" width="150" alt="Courage the Cowardly Dog" />
+        <img src="./Steven Universe.jpg" width="150" alt="Steven Universe" />
+        <img src="./Star vs forces of evil.jpg" width="150" alt="Star vs forces of evil" />
+        <img src="./Gravity Falls.jpg" width="150" alt="Gravity Falls" />
+        <img src="./Adventure time.jpg" width="150" alt="Adventure time" />
+    </div>
+    <div class="center"><i>cartoon network and a whole lot more.</i></div>
+
+    <hr>
+
+    <!-- MOVIES -->
+    <h2 class="center">🎬 ── MOVIES</h2>
+    <div class="grid">
+        <img src="./end game.jpg" width="150" alt="Avenger Endgame" />
+        <img src="./no way home.jpg" width="150" alt="Spider Man no way home" />
+        <img src="./charlie and the chocolate factory.jpg" width="150" alt="Charlie and the chocolate factory" />
+        <img src="./Harry Potter.jpg" width="150" alt="Harry Potter" />
+        <img src="./joker.jpg" width="150" alt="Joker" />
+        <img src="./Ready or Not.jpg" width="150" alt="Ready or Not" />
+    </div>
+    <div class="center"><i>more movies to get lost in.</i></div>
+
+    <hr>
+
+    <div class="center">
+        <p><em>more fandoms will be added as I remember them.</em></p>
+    </div>
+
 </body>
 </html>
